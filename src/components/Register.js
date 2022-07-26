@@ -7,11 +7,11 @@ export default function Register() {
         
         <div className="main">
             <div className="appName">
-                <b>Socialize</b>
+                <b>Quick Share</b>
             </div>
             <div className="submain">
                 <div className="heading">
-                    Sign up to Socialize
+                    Sign up to Quick Share
                 </div>
 
                 <div className="blocks">
