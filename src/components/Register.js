@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/Register.css'
+import { Link } from 'react-router-dom'
 
 export default function Register() {
     const [formData,setFormData] = useState([])
@@ -30,11 +31,11 @@ export default function Register() {
         
         <div className="main">
             <div className="appName">
-                <b>Socialize</b>
+                <b>QuickShare</b>
             </div>
             <div className="submain">
                 <div className="heading">
-                    Sign up to Socialize
+                    Sign up to Quick Share
                 </div>
             <form onSubmit={handleSubmit}>
                 <div className="blocks">
@@ -77,7 +78,7 @@ export default function Register() {
                 </div>
                 </form>
                 <div className="signLink">
-                    {/* <Link to='/login'>Already an user? Log in to Socialize</Link> */}
+                    <Link to='/login'>Already an user? Log in to Socialize</Link>
                 </div>
             </div>
         </div>
