@@ -1,0 +1,89 @@
+* { font-family: 'Poppins' }
+
+.signBody {
+    background-color: #add6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+}
+
+.appName {
+    font-size: 50px;
+}
+
+.main {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submain {
+    background: white;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    margin: 10px;
+    font-size: x-large;
+}
+
+.blocks {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    border: 0;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    padding: 5px;
+
+}
+
+input {
+    padding: 7px;
+    display: flex;
+    border-radius: 10px;
+    border-color: #60768c;
+    width: 300px;
+    height: 20px;
+    font-size: medium;
+}
+
+.signup {
+    border-radius: 10px;
+    color: white;
+    border: 1px;
+    background-color: #013b75;
+    padding: 11px;
+    margin: 11px;
+    margin-bottom: 1px;
+    font-size: large;
+    width: 320px;
+}
+
+.signup:hover {
+    background-color: white;
+    color: #013b75;
+    border: 1px solid #013b75;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+.signLink {
+    color: #013b75;
+    padding: 10px;
+    
+}
