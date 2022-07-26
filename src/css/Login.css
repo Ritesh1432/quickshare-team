@@ -49,6 +49,8 @@
       border: 1px solid gray;
       font-size: 18px;
       padding-left: 20px;
+      width: 600px;
+      margin: 10px;
   }
   
   .loginInput:focus{
@@ -64,6 +66,9 @@
       font-size: 20px;
       font-weight: bold;
       cursor: pointer;
+      width: 500px;
+      margin: 10px;
+      
   }
   
   
