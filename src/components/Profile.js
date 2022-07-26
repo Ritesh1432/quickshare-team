@@ -13,7 +13,7 @@ export default function Profile() {
           .then(res => res.json())
           .then(data => {setUsers(data)})
           .catch(err=>console.log(err));
-        setCurrentUser("Ritesh123");
+        setCurrentUser(localStorage.getItem('Username'));
       }, []);
 
     useEffect(()=>{

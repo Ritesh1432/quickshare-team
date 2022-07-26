@@ -36,8 +36,10 @@ export default function Login() {
   })
 
   if(localStorage.getItem('Username'))
+  {
   navigate('/')
-   
+  window.location.reload();
+  } 
   return (
     <div className="login">
       <div className="loginWrapper">
@@ -50,8 +52,8 @@ export default function Login() {
         <div className="loginRight">
           <div className="loginBox">
             <form onSubmit={handleSubmit}>
-            <input placeholder="Username" className="loginInput" onChange={handleChange} name='uname' />
-            <input placeholder="Password" className="loginInput" onChange={handleChange} name='password'/>
+            <input type='text' placeholder="Username" className="loginInput" onChange={handleChange} name='uname' />
+            <input type='password' placeholder="Password" className="loginInput" onChange={handleChange} name='password'/>
             <button className="loginButton" type="submit">Log In</button>
             </form>
             {/* <span className="loginForgot">Forgot Password?</span> */}
