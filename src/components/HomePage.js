@@ -2,6 +2,7 @@ import React from 'react'
 import '/home/tatheersayed/Desktop/quickshare-team/src/css/HomePage.css'
 
 export default function HomePage() {
+  
   return (
     <div className='king'>
       <div className='left'></div>
