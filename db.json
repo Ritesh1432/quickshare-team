@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "fname": "Ritesh",
+      "lname": "Dewoolkar",
+      "uname": "Ritesh123",
+      "email": "ritesh@g.com",
+      "pno": "7890376623",
+      "pw": "123456",
+      "cpw": "123456",
+      "id": 1
+    }
+  ]
+}

@@ -1,5 +1,38 @@
+body {
+    background-color: white;
+}
+
 .profileBody {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    /* background-color: white; */
+}
+
+.dataBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid #03045E;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profileBody button {
+    padding: 10px;
+    font-size: larger;
+    color: white;
+    background-color: #03045E;
+    border-radius: 10px;
+    border: 0;
+}
+
+.profileBody button:hover{
+    background-color: white;
+    color: #03045E;
+    cursor: pointer;
+    border: 2px solid #03045E;
 }
