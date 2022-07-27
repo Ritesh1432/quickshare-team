@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import '../css/Register.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Register() {
     const [formData,setFormData] = useState([])
+    let navigate = useNavigate();
     const handleChange = ((e) => {
     setFormData({
         ...formData,
@@ -22,7 +23,11 @@ export default function Register() {
             method:'POST',
             headers: {"Content-Type":"application/json"},
             body:JSON.stringify(formData)
+
+
 })
+navigate('/login')
+
     }
    })
 
