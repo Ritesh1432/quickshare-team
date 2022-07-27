@@ -29,7 +29,7 @@ export default function Register() {
   return (
     <div className="signBody">
         
-        <div className="main">
+        <div className="mainRegister">
             <div className="appName">
                 <b>QuickShare</b>
             </div>

@@ -4,32 +4,17 @@ import '../css/EditProfile.css'
 export default function EditProfile() {
     const [formData,setFormData] = useState([])
     const handleChange = ((e) => {
-        setFormData({
-            ...formData,
-            [e.target.name] : e.target.value
-        })
+        console.log(e);
     })
 
     const handleSubmit = ((e) => {
-        if(formData.pw !== formData.cpw)
-            alert('Password did not match')
-        else
-        {
-            e.preventDefault();
-            fetch('http://localhost:3000/users',{
-                method:'POST',
-                headers: {"Content-Type":"application/json"},
-                body:JSON.stringify(formData)})
-        }
+        console.log(e);
     })
 
   return (
     <div className="signBody">
         
         <div className="main">
-            <div className="appName">
-                <b>Username: {localStorage.getItem('Username')}</b>
-            </div>
             <div className="submain">
                 <div className="heading">
                     Edit Your Details
