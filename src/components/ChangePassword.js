@@ -4,10 +4,10 @@ import  {useState} from 'react'
 // import { Navigate } from 'react-router-dom'
 
 export default function ChangePassword({userDetail}) {
-    const [formData,setFormData] = useState([])
+    const [formData,setFormData] = useState({});
+    const [newPassword, setNewPassword] = useState({});
 
     const handleChange = ((e) => {
-        e.preventDefault();
     setFormData({
         ...formData,
         [e.target.name] : e.target.value
@@ -17,16 +17,16 @@ export default function ChangePassword({userDetail}) {
     
     const handleSubmit  = ((e) => {
         e.preventDefault();
-        if(formData.oldpw !== userDetail.pw)
-            alert("Incorrect Old Password!")
-        else if(formData.newpw !== formData.cpw)
+        setNewPassword({ "pw":  formData.newpw, "cpw":formData.newpw }
+        );
+        if(formData.newpw !== formData.cpw)
             alert("New passwords didn't match")
         else 
         {
             const requestOptions = {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ "pw":  formData.newpw, "cpw":formData.newpw })
+                body: JSON.stringify(newPassword)
             };
             fetch('http://localhost:3000/users', requestOptions)
             .then(response => response.json())
@@ -42,7 +42,7 @@ export default function ChangePassword({userDetail}) {
                 <div className="heading">
                     Edit Your Password
                 </div>
-            <form onSubmit={()=> handleSubmit()}>
+            <form onSubmit={handleSubmit}>
                 <div className="blocks1">
                     <div>
                         <input name='oldpw' placeholder='old password' type='text'onChange={handleChange}  />
@@ -58,7 +58,7 @@ export default function ChangePassword({userDetail}) {
                         <input name='cpw' placeholder='Confirm new password' type='text' onChange={handleChange}/>
                     </div>
                 
-                    <button className='passwordbutton'>Edit</button>
+                    <button type='submit' className='passwordbutton'>Change Password</button>
                 </div>
                 </form>
             </div>
