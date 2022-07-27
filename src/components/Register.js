@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 export default function Register() {
     const [formData,setFormData] = useState([])
     let navigate = useNavigate();
+    
     const handleChange = ((e) => {
     setFormData({
         ...formData,
@@ -12,7 +13,7 @@ export default function Register() {
         })
     })
 
-    const handleSubmit  =((e) => {
+    const handleSubmit  = ((e) => {
     if(formData.pw !== formData.cpw)
         alert('Password did not match')
     else {
@@ -28,7 +29,6 @@ export default function Register() {
 
   return (
     <div className="signBody">
-        
         <div className="mainRegister">
             <div className="appName">
                 <b>QuickShare</b>
