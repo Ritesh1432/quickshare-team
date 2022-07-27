@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Register() {
     const [formData,setFormData] = useState([])
-  const handleChange = ((e) => {
+    const handleChange = ((e) => {
     setFormData({
         ...formData,
         [e.target.name] : e.target.value

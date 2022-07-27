@@ -1,0 +1,12 @@
+.signBody {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+
+.appName {
+    font-size: 40px;
+}

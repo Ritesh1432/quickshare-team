@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import '../css/Profile.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Profile() {
 
     const [users, setUsers] = useState([]);
     const [currentUser, setCurrentUser] = useState(null);
     const [userDetail, setUserDetail] = useState({});
+    let navigate = useNavigate();
 
 
     useEffect(() => {
@@ -36,7 +38,7 @@ export default function Profile() {
                 <h2>User name: {userDetail && userDetail.uname}</h2>
                 <h2>Email ID: {userDetail && userDetail.email}</h2>
                 <h2>Phone number: {userDetail && userDetail.pno}</h2>
-                <div><button>Edit Profile</button> <button>View Posts</button></div>
+                <div><button onClick={() => navigate('/editprofile')}>Edit Profile</button> <button>View Posts</button></div>
 
             </div>
         </div>
