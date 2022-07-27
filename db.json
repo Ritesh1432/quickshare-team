@@ -4,8 +4,8 @@
       "fname": "Ritesh",
       "lname": "Dewoolkar",
       "uname": "Ritesh123",
-      "email": "rits@g.com",
-      "pno": "1234567890",
+      "email": "ritesh@g.com",
+      "pno": "7890376623",
       "pw": "123456",
       "cpw": "123456",
       "id": 1
@@ -28,6 +28,13 @@
       "postTitle": "lighthouse",
       "postClass": "beach",
       "id": 1
+    },
+    {
+      "postTitle": "Flower",
+      "uname": "Ritesh123",
+      "postImage": "https://images.unsplash.com/photo-1658820155851-b0f8209d4d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      "postClass": "Pink Flower",
+      "id": 3
     }
   ]
 }
