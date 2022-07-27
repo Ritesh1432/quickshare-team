@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import '../css/Profile.css'
+import { useNavigate } from 'react-router-dom';
+import EditProfile from './EditProfile';
 
 export default function Profile() {
 
     const [users, setUsers] = useState([]);
     const [currentUser, setCurrentUser] = useState(null);
     const [userDetail, setUserDetail] = useState({});
+    const [editProfile, setEditProfile] = useState(false);
+    let navigate = useNavigate();
 
 
     useEffect(() => {
@@ -27,19 +31,23 @@ export default function Profile() {
 
 
   return (
-
     <div>
-        <div className='profileBody'>
-            <div className='dataBlock'>
-                <h1>User Details</h1>
-                <h2>Name: {userDetail && userDetail.fname} {userDetail && userDetail.lname}</h2>
-                <h2>User name: {userDetail && userDetail.uname}</h2>
-                <h2>Email ID: {userDetail && userDetail.email}</h2>
-                <h2>Phone number: {userDetail && userDetail.pno}</h2>
-                <div><button>Edit Profile</button> <button>View Posts</button></div>
-
-            </div>
+      <div className='profileBody'>
+        <div className='dataBlock'>
+          <h1>User Details</h1>
+          <h2>Name: {userDetail && userDetail.fname} {userDetail && userDetail.lname}</h2>
+          <h2>User name: {userDetail && userDetail.uname}</h2>
+          <h2>Email ID: {userDetail && userDetail.email}</h2>
+          <h2>Phone number: {userDetail && userDetail.pno}</h2>
+          <div>
+            <button onClick={() => setEditProfile(true)}>Edit Profile</button> 
+            <button>View Posts</button>
+          </div>
         </div>
+        {
+          editProfile && <EditProfile userDetail={userDetail}/>
+        }
+      </div>
     </div>
   )
 }

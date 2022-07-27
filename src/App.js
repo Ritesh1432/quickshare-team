@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import HomePage from './components/HomePage';
 import { useEffect, useState } from 'react';
+import EditProfile from './components/EditProfile';
 
 function App() {
   const [auth,setAuth] = useState(false)
@@ -21,10 +22,11 @@ function App() {
        auth ? <Header /> : <></>
   }
       <Routes>
-      <Route path = '/' element = {auth ? <HomePage /> : <Register />} />
-      <Route path = '/profile' element = {<Profile />} />
-      <Route path = '/register' index element = {<Register />} />
-      <Route path = '/login' element = {<Login/>} />
+        <Route path = '/' element = {auth ? <HomePage /> : <Register />} />
+        <Route path = '/profile' element = {<Profile />} />
+        <Route path = '/editprofile' element = {<EditProfile />} />
+        <Route path = '/register' index element = {<Register />} />
+        <Route path = '/login' element = {<Login/>} />
      </Routes>
     </div>
   );
