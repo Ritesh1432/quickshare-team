@@ -1,50 +1,63 @@
 import React, { useState } from 'react'
 import '../css/EditProfile.css'
 
-export default function EditProfile() {
-    const [formData,setFormData] = useState([])
+export default function EditProfile({userDetail}) {
+    const [updatedData, setUpdatedData] = useState([]);
+
     const handleChange = ((e) => {
-        console.log(e);
-    })
+        setUpdatedData({
+            ...updatedData,
+            [e.target.name] : e.target.value
+            })
+        console.log(updatedData);
+        })
 
     const handleSubmit = ((e) => {
-        console.log(e);
-    })
+        e.preventDefault();
+        console.log("UPDATED DATA: ", updatedData);
+        // const requestOptions = {
+        //     method: 'PUT',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(updatedData)
+        // };
+        // fetch('http://localhost:3000/users/posts/'+userDetail.id.toString(), requestOptions)
+        //     .then(response => response.json())
+        //     .then(data => console.log(data.id));
+
+    });
+
 
   return (
-    <div className="signBody">
-        
-        <div className="main">
-            <div className="submain">
-                <div className="heading">
-                    Edit Your Details
-                </div>
+    <div className="main">
+        <div className="submain">
+            <div className="heading">
+                Edit Your Details
+            </div>
             <form onSubmit={handleSubmit}>
                 <div className="blocks">
                     <div>
-                        <input name='fname' placeholder='First name' type='text' onChange={handleChange} />
+                        <input name='fname' placeholder='First name' type='text' onChange={handleChange} value={userDetail.fname}/>
                     </div>
                 </div>
                 <div className="blocks">
                     <div>
-                        <input name='lname' placeholder='Last name' type='text' onChange={handleChange}  />
+                        <input name='lname' placeholder='Last name' type='text' onChange={handleChange} value={userDetail.lname} />
                     </div>
                 </div>
                 <div className="blocks">
                     <div>
-                        <input name='email' placeholder='Enter Email ID' type='email' onChange={handleChange}/>
+                        <input name='email' placeholder='Enter Email ID' type='email' onChange={handleChange} value={userDetail.email}/>
                     </div>
                 </div>
                 <div className="blocks">
                     <div>
-                        <input name='pno' placeholder='Enter Phone Number' type='number' onChange={handleChange} />
+                        <input name='pno' placeholder='Enter Phone Number' type='number' onChange={handleChange} value={userDetail.pno} />
                     </div>
                 </div>
                 <div>
                     <button className="signup" type='submit' value='editProfile'>Edit</button>
                 </div>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
   )
