@@ -51,7 +51,7 @@ export default function HomePage() {
       </form>
       {
          allPosts && allPosts.map((post,index) => {
-         return <PostComponent key={index} title = {post.postTitle} image = {post.postImage} content = {post.postClass} uname = {post.uname} />
+         return <PostComponent key={index} title = {post.postTitle} image = {post.postImage} content = {post.postClass} uname = {post.uname} id={post.id} />
         })
       }
      </div>
