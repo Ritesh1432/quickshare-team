@@ -4,8 +4,8 @@
       "fname": "Ritesh",
       "lname": "Dewoolkar",
       "uname": "Ritesh123",
-      "email": "ritesh@g.com",
-      "pno": "7890376623",
+      "email": "rits@g.com",
+      "pno": "1234567890",
       "pw": "123456",
       "cpw": "123456",
       "id": 1
@@ -22,13 +22,6 @@
     }
   ],
   "posts": [
-    {
-      "postTitle": "wallpaper",
-      "uname": "ritik10",
-      "postClass": "random",
-      "postImage": "https://images.unsplash.com/photo-1658851874316-0c6666b7bf08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-      "id": 1
-    },
     {
       "postImage": "https://images.unsplash.com/photo-1658840029307-2be9308097a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
       "uname": "ritik10",

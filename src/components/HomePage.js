@@ -20,7 +20,7 @@ export default function HomePage() {
     
   },[])
   console.log(allPosts);
-  const handleSubmit = ((e) => {
+  const handleSubmit = (() => {
     fetch('http://localhost:3000/posts',{
       method:'POST',
       headers: {"Content-Type":"application/json"},
