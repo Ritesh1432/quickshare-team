@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/EditProfile.css'
+import ChangePassword from './ChangePassword';
 
 export default function EditProfile() {
     const [formData,setFormData] = useState([])
@@ -44,6 +45,7 @@ export default function EditProfile() {
                     <button className="signup" type='submit' value='editProfile'>Edit</button>
                 </div>
                 </form>
+                <ChangePassword userDetail={userDetail}/>
             </div>
         </div>
     </div>
