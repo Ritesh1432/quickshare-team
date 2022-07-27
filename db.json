@@ -4,8 +4,8 @@
       "fname": "Ritesh",
       "lname": "Dewoolkar",
       "uname": "Ritesh123",
-      "email": "ritesh@g.com",
-      "pno": "7890376623",
+      "email": "rits@g.com",
+      "pno": "1234567890",
       "pw": "123456",
       "cpw": "123456",
       "id": 1
@@ -21,5 +21,24 @@
       "id": 2
     }
   ],
+<<<<<<< HEAD
+  "posts": [
+    {
+      "postImage": "https://images.unsplash.com/photo-1658840029307-2be9308097a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "uname": "ritik10",
+      "postTitle": "Beach",
+      "postClass": "Lighthouse",
+      "id": 2
+    },
+    {
+      "postTitle": "Flower",
+      "uname": "Ritesh123",
+      "postImage": "https://images.unsplash.com/photo-1658820155851-b0f8209d4d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      "postClass": "Pink Flower",
+      "id": 3
+    }
+  ]
+=======
   "posts": []
+>>>>>>> 1fe7e9d5d5e3b5e66c2942b32a29e516b2f5dc3a
 }

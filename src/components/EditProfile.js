@@ -3,7 +3,7 @@ import '../css/EditProfile.css'
 import ChangePassword from './ChangePassword';
 
 export default function EditProfile({userDetail}) {
-    const [updatedData, setUpdatedData] = useState([]);
+    const [updatedData, setUpdatedData] = useState(userDetail);
 
     const handleChange = ((e) => {
         setUpdatedData({
@@ -16,14 +16,15 @@ export default function EditProfile({userDetail}) {
     const handleSubmit = ((e) => {
         e.preventDefault();
         console.log("UPDATED DATA: ", updatedData);
-        // const requestOptions = {
-        //     method: 'PUT',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify(updatedData)
-        // };
-        // fetch('http://localhost:3000/users/posts/'+userDetail.id.toString(), requestOptions)
-        //     .then(response => response.json())
-        //     .then(data => console.log(data.id));
+        const requestOptions = {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(updatedData)
+        };
+        fetch('http://localhost:3000/users/'+userDetail.id.toString(), requestOptions)
+            .then(response => response.json())
+            .then(data => console.log(data.id));
+        window.location.reload(false);
 
     });
 
@@ -37,22 +38,22 @@ export default function EditProfile({userDetail}) {
             <form onSubmit={handleSubmit}>
                 <div className="blocks">
                     <div>
-                        <input name='fname' placeholder='First name' type='text' onChange={handleChange} value={userDetail.fname}/>
+                        <input name='fname' placeholder='First name' type='text' onChange={handleChange} value={updatedData.fname}/>
                     </div>
                 </div>
                 <div className="blocks">
                     <div>
-                        <input name='lname' placeholder='Last name' type='text' onChange={handleChange} value={userDetail.lname} />
+                        <input name='lname' placeholder='Last name' type='text' onChange={handleChange} value={updatedData.lname} />
                     </div>
                 </div>
                 <div className="blocks">
                     <div>
-                        <input name='email' placeholder='Enter Email ID' type='email' onChange={handleChange} value={userDetail.email}/>
+                        <input name='email' placeholder='Enter Email ID' type='email' onChange={handleChange} value={updatedData.email}/>
                     </div>
                 </div>
                 <div className="blocks">
                     <div>
-                        <input name='pno' placeholder='Enter Phone Number' type='number' onChange={handleChange} value={userDetail.pno} />
+                        <input name='pno' placeholder='Enter Phone Number' type='number' onChange={handleChange} value={updatedData.pno} />
                     </div>
                 </div>
                 <div>
