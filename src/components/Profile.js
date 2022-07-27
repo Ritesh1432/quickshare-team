@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../css/Profile.css'
 import EditProfile from './EditProfile';
-import MyPosts  from './MyPosts';
 import PostComponent from './PostComponent';
 
 export default function Profile() {
@@ -38,17 +37,17 @@ export default function Profile() {
       .then(data => setUserPost(data))
     },[])
 
-    const viewPost = () => {
-      userPost && userPost.filter(post => post.uname === localStorage.getItem('Username') && myPosts.push(post))
-          
-        }
+    const viewPost = () => { 
+      setMyPostButton(true)
+      setEditProfile(false)
+      if(myPosts.length===0)
+      {
+        userPost.filter(post => post.uname === localStorage.getItem('Username') && myPosts.push(post))
+      }
         
-
+    }
   
-
-
- 
-
+        
 
   return (
     <div>
@@ -59,13 +58,14 @@ export default function Profile() {
                 <h2>User name: {userDetail && userDetail.uname}</h2>
                 <h2>Email ID: {userDetail && userDetail.email}</h2>
                 <h2>Phone number: {userDetail && userDetail.pno}</h2>
-                <div><button onClick={() => { setMyPostButton(false);
-                  setEditProfile(true)
-                }}>Edit Profile</button>
-                <button onClick ={() =>
-                 { setMyPostButton(true);
-                  setEditProfile(false)
+                <div>
+                  <button onClick={() => { 
+                    setMyPostButton(false)
+                    setEditProfile(true)
                 }}
+                >Edit Profile</button>
+                
+                <button onClick ={viewPost}
                 > View Posts</button></div>
 
             </div>
@@ -73,12 +73,14 @@ export default function Profile() {
         {
           editProfile && <EditProfile userDetail={userDetail}/>
         }
+<div className='myPostCard'>
         {
           myPostButton && myPosts.map((post,index) => {
             console.log(post);
           return <PostComponent key={index} title = {post.postTitle} image = {post.postImage} content = {post.postClass} uname = {post.uname} id={post.id} />
         })
       }
+      </div>
       </div>
     
   )
