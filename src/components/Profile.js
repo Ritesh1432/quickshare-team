@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../css/Profile.css'
-import { useNavigate } from 'react-router-dom';
 import EditProfile from './EditProfile';
 
 export default function Profile() {
@@ -9,7 +8,6 @@ export default function Profile() {
     const [currentUser, setCurrentUser] = useState(null);
     const [userDetail, setUserDetail] = useState({});
     const [editProfile, setEditProfile] = useState(false);
-    let navigate = useNavigate();
 
 
     useEffect(() => {
