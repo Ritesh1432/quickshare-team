@@ -31,6 +31,13 @@
     width: 80px;
     border-radius: 10px;
     font-size: 20px;
+    cursor: pointer;
+
+  }
+  .addPostButton:hover{
+    color: #03045E;
+    background-color: white;
+    border: 1px solid #03045E;
   }
   .addPostForm{
     border: 1px solid black;
