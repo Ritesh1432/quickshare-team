@@ -1,0 +1,47 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 500px auto 500px;
+    
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .middleGridContent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+   
+  }
+  .formInputClass{
+    margin: 10px;
+    width: 500px;
+    height: 30px;
+  }
+  .addPostButton{
+    color: white;
+    background-color: #03045E;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+  .addPostButton:hover{
+    color: #03045E;
+    background-color: white;
+    border: 1px solid #03045E;
+  }
+  .addPostForm{
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+  }

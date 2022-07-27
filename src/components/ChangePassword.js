@@ -35,8 +35,6 @@ export default function ChangePassword({userDetail}) {
         
     });
     
-
-
   return (
     <div>
         <div className="main">

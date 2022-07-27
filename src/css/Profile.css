@@ -24,6 +24,7 @@ body {
 
 .profileBody button {
     padding: 10px;
+    margin: 10px;
     font-size: larger;
     color: white;
     background-color: #03045E;
