@@ -10,9 +10,13 @@
     font-weight: bold;
     float: left;
     margin-left: 10px;
-   
-
 }
+
+.deletePost {
+    float: right;
+    margin: 10px;
+}
+
 .postTitleClass{
     font-size: 26px;
     font-family: cursive;
