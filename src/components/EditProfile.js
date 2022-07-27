@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 import '../css/EditProfile.css'
 import ChangePassword from './ChangePassword';
 
@@ -60,7 +60,7 @@ export default function EditProfile({userDetail}) {
                     <button className="signup" type='submit' value='editProfile'>Edit</button>
                 </div>
                 </form>
-                {/* <ChangePassword userDetail={userDetail}/> */}
+                <ChangePassword userDetail={userDetail}/>
             </div>
         </div>
   )

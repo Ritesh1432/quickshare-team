@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "fname": "Ritesh",
+      "lname": "Dewoolkar",
+      "uname": "Ritesh123",
+      "email": "rits@g.com",
+      "pno": "1234567890",
+      "pw": "123456",
+      "cpw": "123456",
+      "id": 1
+    },
+    {
+      "fname": "ritik",
+      "lname": "shah",
+      "uname": "ritik10",
+      "email": "ritik@gmail.com",
+      "pno": "0987654321",
+      "pw": "12345",
+      "cpw": "12345",
+      "id": 2
+    }
+  ],
+  "posts": []
+}
