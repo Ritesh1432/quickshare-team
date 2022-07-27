@@ -10,5 +10,21 @@
       "cpw": "123456",
       "id": 1
     }
+  ],
+  "posts": [
+    {
+      "postImage": "https://images.unsplash.com/photo-1658827866369-25c66ae3dc30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "uname": "Ritesh123",
+      "postTitle": "Mountains",
+      "postClass": "Himachal",
+      "id": 1
+    },
+    {
+      "postTitle": "Car",
+      "uname": "Ritesh123",
+      "postImage": "https://images.unsplash.com/photo-1658844709274-f733f5da778c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "postClass": "Mercedes",
+      "id": 2
+    }
   ]
 }
