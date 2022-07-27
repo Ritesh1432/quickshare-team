@@ -56,7 +56,6 @@ export default function Login() {
             <input type='password' placeholder="Password" className="loginInput" onChange={handleChange} name='password'/>
             <button className="loginButton" type="submit">Log In</button>
             </form>
-            {/* <span className="loginForgot">Forgot Password?</span> */}
             <button className="loginRegisterButton" onClick={() => navigate('/register')}>
               Create a New Account
             </button>

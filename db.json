@@ -9,6 +9,39 @@
       "pw": "123456",
       "cpw": "123456",
       "id": 1
+    },
+    {
+      "fname": "ritik",
+      "lname": "shah",
+      "uname": "ritik10",
+      "email": "ritik@gmail.com",
+      "pno": "0987654321",
+      "pw": "12345",
+      "cpw": "12345",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "postTitle": "wallpaper",
+      "uname": "ritik10",
+      "postClass": "random",
+      "postImage": "https://images.unsplash.com/photo-1658851874316-0c6666b7bf08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 1
+    },
+    {
+      "postImage": "https://images.unsplash.com/photo-1658840029307-2be9308097a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "uname": "ritik10",
+      "postTitle": "Beach",
+      "postClass": "Lighthouse",
+      "id": 2
+    },
+    {
+      "postTitle": "Flower",
+      "uname": "Ritesh123",
+      "postImage": "https://images.unsplash.com/photo-1658820155851-b0f8209d4d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      "postClass": "Pink Flower",
+      "id": 3
     }
     
     

@@ -1,0 +1,33 @@
+.postCard{
+    border: 1px solid black;
+    margin: 20px;
+    box-shadow: 2px 2px 2px ;
+    width: 600px;
+}
+.userNameText{
+    font-size: 24px;
+    font-family: verdana;
+    font-weight: bold;
+    float: left;
+    margin-left: 10px;
+}
+
+.deletePost {
+    float: right;
+    margin: 10px;
+}
+
+.postTitleClass{
+    font-size: 26px;
+    font-family: cursive;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.postImageClass{
+    height: 500px;
+    width: 500px;
+
+}
+.tesClass{
+    text-align: center;
+}
