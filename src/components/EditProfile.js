@@ -60,7 +60,7 @@ export default function EditProfile({userDetail}) {
                     <button className="signup" type='submit' value='editProfile'>Edit</button>
                 </div>
                 </form>
-                {/* <ChangePassword userDetail={userDetail}/> */}
+                <ChangePassword userDetail={userDetail}/>
             </div>
         </div>
   )

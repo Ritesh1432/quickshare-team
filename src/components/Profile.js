@@ -27,7 +27,7 @@ export default function Profile() {
 
         let user1 = users.find(u=>u.uname===currentUser);
         setUserDetail(user1);
-        console.log(user1);
+        // console.log(user1);
 
     }, [users, currentUser]);
 
