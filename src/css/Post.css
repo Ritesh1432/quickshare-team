@@ -16,6 +16,17 @@
 .deletePost {
     float: right;
     margin: 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.deletePost:hover {
+    border: 1px solid red;
+    color: red;
+    background-color: white;
 }
 
 .postTitleClass{

@@ -21,6 +21,7 @@
       "id": 2
     }
   ],
+<<<<<<< HEAD
   "posts": [
     {
       "postImage": "https://images.unsplash.com/photo-1658840029307-2be9308097a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
@@ -37,4 +38,7 @@
       "id": 3
     }
   ]
+=======
+  "posts": []
+>>>>>>> 1fe7e9d5d5e3b5e66c2942b32a29e516b2f5dc3a
 }
