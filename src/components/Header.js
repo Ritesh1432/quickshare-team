@@ -17,9 +17,9 @@ export default function Header() {
       <ul>
         <li><Link className='navText' to = "/">QuickShare</Link></li>
         <div className='line'>
-        <li><Link className='navText' to="/">Home</Link></li>
-        <li><Link className='navText' to="/profile">Profile</Link></li>
-        <li><div className='navText' onClick={logoutfunc}>Logout</div></li>
+          <li><Link className='navText' to="/">Home</Link></li>
+          <li><Link className='navText' to="/profile">Profile</Link></li>
+          <li><div className='navText' onClick={logoutfunc}>Logout</div></li>
         </div>
       </ul>
 

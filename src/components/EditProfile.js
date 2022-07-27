@@ -4,12 +4,14 @@ import '../css/EditProfile.css'
 export default function EditProfile() {
     const [formData,setFormData] = useState([])
     const handleChange = ((e) => {
+        e.preventDefault();
         console.log(e);
-    })
+    });
 
     const handleSubmit = ((e) => {
+        e.preventDefault();
         console.log(e);
-    })
+    });
 
   return (
     <div className="signBody">
@@ -43,7 +45,10 @@ export default function EditProfile() {
                 <div>
                     <button className="signup" type='submit' value='editProfile'>Edit</button>
                 </div>
-                </form>
+            </form>
+            <div>
+                <button className="signup" type='submit' value='editProfile'>Edit</button>
+            </div>
             </div>
         </div>
     </div>
