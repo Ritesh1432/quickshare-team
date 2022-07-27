@@ -45,3 +45,7 @@
 .tesClass{
     text-align: center;
 }
+.myPostCard{
+    display: flex;
+    justify-content: center;
+}
