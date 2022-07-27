@@ -1,30 +1,30 @@
 import React, { useState } from 'react'
 import '../css/Register.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Register() {
     const [formData,setFormData] = useState([])
+    let navigate = useNavigate();
     const handleChange = ((e) => {
     setFormData({
         ...formData,
         [e.target.name] : e.target.value
+        })
     })
-    
-  })
 
     const handleSubmit  =((e) => {
-        if(formData.pw !== formData.cpw)
-            alert('Password did not match')
-        else
-        {
-            e.preventDefault();
-            fetch('http://localhost:3000/users',{
-                method:'POST',
-                headers: {"Content-Type":"application/json"},
-                body:JSON.stringify(formData)
-            })
+    if(formData.pw !== formData.cpw)
+        alert('Password did not match')
+    else {
+        e.preventDefault();
+        fetch('http://localhost:3000/users',{
+            method:'POST',
+            headers: {"Content-Type":"application/json"},
+            body:JSON.stringify(formData)
+        })
+        navigate('/login');
         }
-   })
+    })
 
   return (
     <div className="signBody">
