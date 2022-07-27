@@ -7,7 +7,9 @@ export default function Profile() {
     const [users, setUsers] = useState([]);
     const [currentUser, setCurrentUser] = useState(null);
     const [userDetail, setUserDetail] = useState({});
+    const [userPost, setUserPost] = useState({});
     let navigate = useNavigate();
+    
 
 
     useEffect(() => {
@@ -26,6 +28,14 @@ export default function Profile() {
 
     }, [users, currentUser]);
 
+    
+
+  const viewPost = ((e) => {
+    e.preventDefault();
+    fetch('http://localhost:3000/posts')
+    .then(res => res.json)
+    .then(data => setUserPost(data))
+  })
 
 
   return (
@@ -38,7 +48,8 @@ export default function Profile() {
                 <h2>User name: {userDetail && userDetail.uname}</h2>
                 <h2>Email ID: {userDetail && userDetail.email}</h2>
                 <h2>Phone number: {userDetail && userDetail.pno}</h2>
-                <div><button onClick={() => navigate('/editprofile')}>Edit Profile</button> <button>View Posts</button></div>
+                <div><button onClick={() => navigate('/editprofile')}>Edit Profile</button></div>
+                <div> <button onClick ={() => viewPost()}> View Posts</button></div>
 
             </div>
         </div>
