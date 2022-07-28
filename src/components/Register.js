@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import '../css/Register.css'
+import styles from '../css/Register.module.css'
 import { useNavigate } from 'react-router-dom'
+
 
 export default function Register() {
     const [formData,setFormData] = useState([])
@@ -109,31 +110,39 @@ export default function Register() {
     })
 
   return (
-    <div className="signBody">
-        <div className="mainRegister">
-            <div className="appName">
+    <div className={styles.gridOuterClass}>
+       <div class={styles.gridItemLeft}>
+       <div className={styles.appName}>
                 <b>QuickShare</b>
-            </div>
-            <div className="submain">
-                <div className="heading">
-                    Sign up to Quick Share
+                <br />
+                <span className={styles.registerDesc}>
+                        Connect with friends and the world around you.
+                </span>
+        </div>
+       </div>
+       <div class={styles.gridItemRight}>
+       <div className={styles.signBody}>
+        <div className={styles.mainRegister}>
+            <div className={styles.submain}>
+                <div className={styles.heading}>
+                    Welcome to QuickShare
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <div className="blocks">
-                        <div>
-                            <input name='fname' placeholder='First name' type='text' onChange={handleChange} required/>
-                            {
-                                !regFirstName &&
-                                
-                                <div className='errorMessage1'>
-                                <span>First Name cannot contain number or special character</span>
-                                </div>
+                    <div className={styles.blocks}>
+                     
+                        <input name='fname' placeholder='First name' type='text' onChange={handleChange} required/>
+                        {
+                            !regFirstName &&
+                            
+                            <div className='errorMessage1'>
+                            <span>First Name cannot contain number or special character</span>
+                            </div>
 
-                                
-                            }
-                        </div>
+        
+                        }
+                        
                     </div>
-                    <div className="blocks">
+                    <div className={styles.blocks}>
                         <div>
                             <input name='lname' placeholder='Last name' type='text' onChange={handleChange} required />
                             {
@@ -144,7 +153,7 @@ export default function Register() {
                             }
                         </div>
                     </div>
-                    <div className="blocks">
+                    <div className={styles.blocks}>
                         <div>
                             <input name='uname' placeholder='Enter Username' type='text' onChange={handleChange} required/>
                         </div>
@@ -156,12 +165,12 @@ export default function Register() {
                         
                         }
                     </div>
-                    <div className="blocks">
+                    <div className={styles.blocks}>
                         <div>
                             <input name='email' placeholder='Enter Email ID' type='email' onChange={handleChange} required/>
                         </div>
                     </div>
-                    <div className="blocks">
+                    <div className={styles.blocks}>
                         <div>
                             <input name='pno' placeholder='Enter Phone Number' type='number' onChange={handleChange} required/>
                             { !isPhoneNo &&
@@ -172,7 +181,7 @@ export default function Register() {
                             
                         </div>
                     </div>
-                    <div className="blocks">
+                    <div className={styles.blocks}>
                         <div>
                             <input name='pw' placeholder='Enter Password' type='password' onChange={handleChange} required/>
                             {
@@ -182,7 +191,7 @@ export default function Register() {
                             }
                         </div>        
                     </div>
-                    <div className="blocks">
+                    <div className={styles.blocks}>
                         <div>
                             <input name='cpw' placeholder='Confirm Password' type='password' onChange={handleChange} required/>
                             {
@@ -194,14 +203,16 @@ export default function Register() {
                         </div>        
                     </div>
                     <div>
-                        <button className="signup" type='submit' value='Signup'>Sign Up</button>
+                        <button className={styles.signup} type='submit' value='Signup'>Sign Up</button>
                     </div>
                 </form>
                 <div >
-                    <button className="signInButton" onClick={() => navigate('/login')}>Already an user? Log in to Socialize</button>
+                    <button className={styles.signInButton} onClick={() => navigate('/login')}>Already Registered ? Login</button>
                 </div>
             </div>
         </div>
+    </div>
+       </div>
     </div>
   )
 }

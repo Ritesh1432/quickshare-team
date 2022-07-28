@@ -1,7 +1,10 @@
 .grid-container {
     display: grid;
     grid-template-columns: 500px auto 500px;
-    
+    /* background-image: url('../../social-media-banners-hand-draw-doodle-background-vector-illustration-social-media-banners-hand-draw-doodle-background-117495847.jpg');
+    background-repeat: repeat; */
+    /* background-attachment: scroll; */
+    /* background-size: cover; */
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -21,16 +24,18 @@
   }
   .formInputClass{
     margin: 10px;
-    width: 500px;
+    width: 650px;
     height: 30px;
+    text-align: center;
   }
   .addPostButton{
     color: white;
     background-color: #03045E;
     height: 50px;
-    width: 80px;
+    width: 150px;
+    margin-top: 20px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
 
   }
@@ -40,8 +45,8 @@
     border: 1px solid #03045E;
   }
   .addPostForm{
-    border: 1px solid black;
     padding: 30px;
+    width: 700px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
   }

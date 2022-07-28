@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../css/Login.css'
+import styles from '../css/Login.module.css'
 export default function Login() {
   const [logindata,setLogindata] = useState([])
   const [registeredusers,setRegisteredUsers] = useState([])
@@ -47,25 +47,25 @@ export default function Login() {
    
    
   return (
-    <div className="login">
-      <div className="loginWrapper">
-        <div className="loginLeft">
-          <h3 className="loginLogo">QUICKSHARE</h3>
-          <span className="loginDesc">
+    <div className={styles.login}>
+      <div className={styles.loginWrapper}>
+        <div className={styles.loginLeft}>
+          <h3 className={styles.loginLogo}>QUICKSHARE</h3>
+          <span className={styles.loginDesc}>
             Connect with friends and the world around you.
           </span>
         </div>
-        <div className="loginRight">
+        <div className={styles.loginRight}>
           {
-            errorMessage && <p className="errorMessage">Invalid Credentials</p>
+            errorMessage && <p className={styles.errorMessage}>Invalid Credentials</p>
           }
-          <div className="loginBox">
+          <div className={styles.loginBox}>
             <form onSubmit={handleSubmit}>
-              <input type='text' placeholder="Username" className="loginInput" onChange={handleChange} name='uname' required/>
-              <input type='password' placeholder="Password" className="loginInput" onChange={handleChange} name='password' required/>
-              <button className="loginButton" type="submit">Log In</button>
+              <input type='text' placeholder="Username" className={styles.loginInput} onChange={handleChange} name='uname' required/>
+              <input type='password' placeholder="Password" className={styles.loginInput} onChange={handleChange} name='password' required/>
+              <button className={styles.loginButton} type="submit">Log In</button>
             </form>
-            <button className="loginRegisterButton" onClick={() => navigate('/register')}>
+            <button className={styles.loginRegisterButton} onClick={() => navigate('/register')}>
               Create a New Account
             </button>
           </div>

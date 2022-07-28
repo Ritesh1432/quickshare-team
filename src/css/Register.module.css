@@ -1,0 +1,154 @@
+* { font-family: 'Poppins' }
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.signBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.appName {
+    color: white;
+    margin-bottom: 10px;
+
+}
+.appName > b {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 60px;
+}
+
+.mainRegister {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.submain {
+    background: white;
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.heading {
+    margin: 10px;
+    font-size: 30px;
+    /* font-weight: bold; */
+    color: #00B4D8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blocks {
+    background-color: white;
+    display: flex;
+    border: 0;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    padding: 5px;
+
+}
+
+input {
+    padding: 7px;
+    display: flex;
+    /* border-radius: 10px; */
+    border-color: #60768c;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    border: 0;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: none;
+    border-bottom: 1px solid black;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.signup {
+    border-radius: 30px;
+    color: white;
+    border: 1px;
+    background-color: #013b75;
+    padding: 11px;
+    margin: 11px;
+    margin-bottom: 1px;
+    font-size: large;
+    width: 320px;
+}
+
+.signup:hover {
+    background-color: white;
+    color: #013b75;
+    border: 1px solid #013b75;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+.signInButton {
+    background-color: #0077B6;
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: large;
+    padding: 10px 20px 10 20px;
+    border-radius: 30px;    
+}
+.signInButton:hover{
+    color:#0077B6;
+    background-color: white;
+    border:1px solid#0077B6;
+    
+}
+
+.errorMessage1{
+    color: red;
+    font-size: 15px;
+    padding: 0;
+    /* width: 330px; */
+    text-align: left;
+    margin-left:5px;
+}
+.gridOuterClass {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100vh;
+  }
+  .gridItemRight {
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .gridItemLeft{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    background-color: #03045E;
+  }
+.registerDesc{
+    font-size: 24px;
+    margin-bottom: 30px;
+}

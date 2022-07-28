@@ -20,7 +20,7 @@ function PostComponent({title,image,content,uname,id}) {
    <>
     <div className='row postCard'>
       <div className='row'>
-        <p className='userNameText'>{uname}</p>
+        {/* <p className='userNameText'>{uname}</p> */}
         {
           userPost && <button className='deletePost' onClick={deletePost}>DELETE </button>
         }
@@ -32,7 +32,7 @@ function PostComponent({title,image,content,uname,id}) {
           <img src={image} className="postImageClass" alt = {title}/>
       </div>
       <div className='row'>
-          <p className='postContentClass'>{content}</p>
+          <p className='postContentClass'>{uname}: {content}</p>
       </div>
 
     </div>

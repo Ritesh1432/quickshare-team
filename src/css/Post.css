@@ -1,8 +1,8 @@
 .postCard{
-    border: 1px solid black;
     margin: 20px;
-    box-shadow: 2px 2px 2px ;
-    width: 600px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    width: 760px;
+    border-radius: 10px;
 }
 
 .userNameText{
@@ -16,29 +16,31 @@
 .deletePost {
     float: right;
     margin: 10px;
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: red;
     font-size: 20px;
     border-radius: 5px;
     padding: 5px;
+    border: none;
     cursor: pointer;
 }
 .deletePost:hover {
     border: 1px solid red;
-    color: red;
-    background-color: white;
+    color:white;
+    border-radius: 30px;
+    background-color:red;
 }
 
 .postTitleClass{
     font-size: 26px;
-    font-family: cursive;
+    font-family: Verdana;
     margin-top: 50px;
     margin-right: 100px;
 }
 
 .postImageClass{
     height: 500px;
-    width: 500px;
+    width: 600px;
 
 }
 

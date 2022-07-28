@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <div>
       <ul>
-        <li><Link className='navText' to = "/">QuickShare</Link></li>
+        <li><Link className='navBrandText' to = "/">QuickShare</Link></li>
         <div className='line'>
           <li><Link className='navText' to="/">Home</Link></li>
           <li><Link className='navText' to="/profile">Profile</Link></li>
