@@ -38,7 +38,7 @@ export default function Login() {
   if(localStorage.getItem('Username'))
   {
   navigate('/')
-  window.location.reload();
+  window.location.reload(false);
   } 
   return (
     <div className="login">

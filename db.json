@@ -6,28 +6,46 @@
       "uname": "Ritesh123",
       "email": "ritesh@g.com",
       "pno": "7890376623",
-      "pw": "123456",
-      "cpw": "123456",
+      "pw": "asdf",
+      "cpw": "asdf",
       "id": 1
-    },
-    {
-      "fname": "ritik",
-      "lname": "shah",
-      "uname": "ritik10",
-      "email": "ritik@gmail.com",
-      "pno": "0987654321",
-      "pw": "12345",
-      "cpw": "12345",
-      "id": 2
     }
   ],
   "posts": [
+    {
+      "postImage": "https://images.unsplash.com/photo-1658840029307-2be9308097a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=865&q=80",
+      "uname": "ritik10",
+      "postTitle": "lighthouse",
+      "postClass": "beach",
+      "id": 1
+    },
     {
       "postTitle": "Flower",
       "uname": "Ritesh123",
       "postImage": "https://images.unsplash.com/photo-1658820155851-b0f8209d4d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       "postClass": "Pink Flower",
       "id": 3
+    },
+    {
+      "postTitle": "Wallpaper",
+      "uname": "ritik10",
+      "postImage": "https://images.unsplash.com/photo-1658815365798-2b0a2587c721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "postClass": "mountains wallpaper",
+      "id": 4
+    },
+    {
+      "postImage": "https://images.unsplash.com/photo-1658869402195-9f0ea192ecd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "uname": "ritik10",
+      "postTitle": "Coding",
+      "postClass": "Gaming Laptop",
+      "id": 5
+    },
+    {
+      "postTitle": "Books",
+      "uname": "Ritesh123",
+      "postImage": "https://images.unsplash.com/photo-1658728942154-fda98dc26f65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "postClass": "Library",
+      "id": 6
     }
   ]
 }
