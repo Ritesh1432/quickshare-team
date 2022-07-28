@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Philosopher&display=swap');
+body {
+    background-color: white;
+}
+
+.profileBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: white; */
+}
+
+.dataBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.profileBody button {
+    padding: 10px;
+    margin: 10px;
+    font-size: larger;
+    color: white;
+    background-color: #03045E;
+    border-radius: 10px;
+    border: 0;
+}
+
+.profileBody button:hover{
+    background-color: white;
+    color: #03045E;
+    cursor: pointer;
+    border: 2px solid #03045E;
+}
+
+.myPostCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.changePassButton{
+    padding: 10px;
+    margin: 10px;
+    font-size: larger;
+    color: white;
+    background-color: #03045E;
+    border-radius: 10px;
+    border: 0;
+}
+.changePassButton:hover{
+    background-color: white;
+    color: #03045E;
+    cursor: pointer;
+    border: 2px solid #03045E;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-top: 1px solid #03045E;
+   
+  }
+  .gridItemLeft {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid #03045E;
+    border-top: #03045E;
+    height: 100;
+    text-align: center;
+  }
+  .gridItemRight{
+    font-size: 30px;
+  }
+  .myProfileText{
+    font-size: 35px;
+    font-weight: 100;
+    margin-top: -20px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .myProfileLabel{
+    font-size: 24px;
+    margin-right: 150px;
+  }
+  .myProfileFields{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-family: 'Philosopher', sans-serif;    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid #03045E;
+  }
+  .myProfileDiv{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .myProfileImageStyle{
+    height: 250px;
+    width: 280px;
+    border-radius: 50%;
+  }
