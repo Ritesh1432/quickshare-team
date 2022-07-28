@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/ChangePassword.css'
+import styles from '../css/ChangePassword.module.css'
 import  {useState} from 'react'
 // import { Navigate } from 'react-router-dom'
 
@@ -47,26 +47,26 @@ export default function ChangePassword({userDetail}) {
     <div>
         <div className="main">
             <div className="submain">
-                <div className="heading">
+                <div className={styles.heading}>
                     Edit Your Password
                 </div>
             <form onSubmit={handleSubmit}>
                 <div className="blocks1">
                     <div>
-                        <input name='oldpw' placeholder='old password' type='text'onChange={handleChange}  />
+                        <input name='oldpw' placeholder='Old Password' type='text'onChange={handleChange} className={styles.inputClassStyle}/>
                     </div>
                 </div>
                 <div className="blocks1">
                     <div>
-                        <input name='newpw' placeholder='new password' type='text' onChange={handleChange} />
+                        <input name='newpw' placeholder='New Password' type='text' onChange={handleChange}  className={styles.inputClassStyle}/>
                     </div>
                 </div>
                 <div className="blocks1">
                     <div>
-                        <input name='cpw' placeholder='Confirm new password' type='text' onChange={handleChange}/>
+                        <input name='cpw' placeholder='Confirm new password' type='text' onChange={handleChange} className={styles.inputClassStyle}/>
                     </div>
                 
-                    <button type='submit' className='passwordbutton'>Change Password</button>
+                    <button type='submit' className={styles.passwordButton}>Change Password</button>
                 </div>
                 </form>
             </div>

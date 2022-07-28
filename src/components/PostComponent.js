@@ -20,7 +20,6 @@ function PostComponent({title,image,content,uname,id}) {
    <>
     <div className='row postCard'>
       <div className='row'>
-        {/* <p className='userNameText'>{uname}</p> */}
         {
           userPost && <button className='deletePost' onClick={deletePost}>DELETE </button>
         }

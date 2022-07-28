@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "fname": "Ritesh",
+      "fname": "Ritesh ",
       "lname": "Dewoolkar",
       "uname": "Ritesh123",
-      "email": "rite@mail.com",
-      "pno": "5678754567",
-      "pw": "123456",
-      "cpw": "123456",
+      "email": "ritesh@gmail.com",
+      "pno": "1234567890",
+      "pw": "098765",
+      "cpw": "098765",
       "id": 1
     },
     {
@@ -19,6 +19,16 @@
       "pw": "qwerty",
       "cpw": "qwerty",
       "id": 2
+    },
+    {
+      "fname": "ritik",
+      "lname": "shah",
+      "uname": "ritik123",
+      "email": "ritik@gmail.com",
+      "pno": "1234567890",
+      "pw": "098765",
+      "cpw": "098765",
+      "id": 3
     }
   ],
   "posts": [
@@ -30,13 +40,6 @@
       "id": 1
     },
     {
-      "postTitle": "Flower",
-      "uname": "Ritesh123",
-      "postImage": "https://images.unsplash.com/photo-1658820155851-b0f8209d4d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-      "postClass": "Pink Flower",
-      "id": 3
-    },
-    {
       "postTitle": "Wallpaper",
       "uname": "ritik10",
       "postImage": "https://images.unsplash.com/photo-1658815365798-2b0a2587c721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
@@ -44,10 +47,10 @@
       "id": 4
     },
     {
-      "postImage": "https://images.unsplash.com/photo-1658869402195-9f0ea192ecd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-      "uname": "ritik10",
-      "postTitle": "Coding",
-      "postClass": "Gaming Laptop",
+      "postTitle": "wallpaper",
+      "uname": "Ritesh123",
+      "postImage": "https://images.unsplash.com/photo-1654460183597-cdb42454716f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "postClass": "Car",
       "id": 5
     }
   ]
