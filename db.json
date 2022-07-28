@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "fname": "Rites",
-      "lname": "Dewoolkar",
+      "fname": "Parth",
+      "lname": "Singh",
       "uname": "Ritesh123",
       "email": "ritesh@g.com",
       "pno": "7890376623",
@@ -21,9 +21,6 @@
       "id": 2
     }
   ],
-<<<<<<< HEAD
-  "posts": []
-=======
   "posts": [
     {
       "postTitle": "Flower",
@@ -33,5 +30,4 @@
       "id": 3
     }
   ]
->>>>>>> 845d553088a97f7ae8ccdb6b3a152bfbbe49a940
 }
