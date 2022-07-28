@@ -67,8 +67,8 @@
       cursor: pointer;
       width: 500px;
       margin: 10px;
-      
   }
+<<<<<<< HEAD
   .loginButton:hover{
     color:#0077B6;
     background-color: white;
@@ -76,6 +76,14 @@
 }
   
   
+=======
+
+  .loginButton:hover {
+    border: 2px solid #0077B6;
+    color: #0077B6;
+    background-color: white;
+  }
+>>>>>>> ddf89097f390ee696cbb450fe582f53396a1f8b2
   
   .loginRegisterButton{
       width: 60%;
@@ -98,3 +106,19 @@
     margin: 10px;
   }
 
+  .loginRegisterButton:hover {
+    border: 2px solid #03045E;
+    color: #03045E;
+    background-color: white;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: larger;
+    border: 5px solid red;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 10px;
+    width: 87%;
+    margin-bottom: 0px;
+  }
