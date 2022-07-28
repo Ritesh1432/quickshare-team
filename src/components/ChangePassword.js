@@ -5,32 +5,40 @@ import  {useState} from 'react'
 
 export default function ChangePassword({userDetail}) {
     const [formData,setFormData] = useState({});
-    const [newPassword, setNewPassword] = useState({});
 
     const handleChange = ((e) => {
     setFormData({
         ...formData,
         [e.target.name] : e.target.value
         })
-    console.log(formData);
+    // console.log(formData);
     })
     
     const handleSubmit  = ((e) => {
         e.preventDefault();
-        setNewPassword({ "pw":  formData.newpw, "cpw":formData.newpw }
-        );
-        if(formData.newpw !== formData.cpw)
+        if(formData.oldpw !== userDetail.pw)
+            alert("Old password didn't match")
+        else if(formData.newpw !== formData.cpw)
             alert("New passwords didn't match")
+        else if(formData.newpw === userDetail.pw)
+            alert("Enter new password!!")
         else 
         {
+            const updatedUser = {
+                ...userDetail
+            }
+            updatedUser["pw"] = formData.newpw;
+            updatedUser["cpw"] = formData.newpw;
             const requestOptions = {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(newPassword)
+                body: JSON.stringify(updatedUser)
             };
-            fetch('http://localhost:3000/users', requestOptions)
-            .then(response => response.json())
-            .then(data => console.log(data.id))
+            fetch('http://localhost:3000/users/'+userDetail.id, requestOptions)
+                .then(response => response.json())
+                .then(data => console.log(data))
+            alert("PASSWORD UPDATED!!")
+            window.location.reload(false)
         }
         
     });

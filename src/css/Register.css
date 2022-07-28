@@ -9,6 +9,7 @@
 
 .appName {
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .mainRegister {
@@ -17,17 +18,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
 }
 
 .submain {
     background: white;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     border-radius: 10px;
     box-shadow: 0 0 2em hsl(231deg 62% 94%);
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .heading {
@@ -55,13 +58,14 @@ input {
     display: flex;
     border-radius: 10px;
     border-color: #60768c;
-    width: 300px;
+    width: 330px;
     height: 20px;
     font-size: medium;
+    margin: 5px;
 }
 
 .signup {
-    border-radius: 10px;
+    border-radius: 30px;
     color: white;
     border: 1px;
     background-color: #013b75;
@@ -81,8 +85,26 @@ input {
     margin: 10px;
 }
 
-.signLink {
-    color: #013b75;
+.signInButton {
+    background-color: #0077B6;
+    margin-top: 10px;
+    color: white;
     padding: 10px;
-    
+    font-size: large;
+    padding: 10px;
+    border-radius: 30px;    
+}
+.signInButton:hover{
+    color:#0077B6;
+    background-color: white;
+    border:1px solid#0077B6;
+}
+
+.errorMessage{
+    color: red;
+    font-size: 15px;
+    padding: 0;
+    /* width: 330px; */
+    text-align: left;
+    margin-left:5px;
 }
