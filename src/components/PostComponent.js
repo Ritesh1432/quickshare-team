@@ -11,7 +11,7 @@ function PostComponent({title,image,content,uname,id}) {
 
   const deletePost = () => {
     fetch('http://localhost:3000/posts/'+id.toString(), { method: 'DELETE' })
-      .then(() => console.log("DELETED"));
+      .then(() => console.log("DELETED Post with id ",id));
     window.location.reload(false);
 
   }

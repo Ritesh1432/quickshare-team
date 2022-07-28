@@ -10,7 +10,7 @@ export default function EditProfile({userDetail}) {
             ...updatedData,
             [e.target.name] : e.target.value
             })
-        console.log(updatedData);
+        // console.log(updatedData);
         })
 
     const handleSubmit = ((e) => {
@@ -22,8 +22,8 @@ export default function EditProfile({userDetail}) {
             body: JSON.stringify(updatedData)
         };
         fetch('http://localhost:3000/users/'+userDetail.id.toString(), requestOptions)
-            .then(response => response.json())
-            .then(data => console.log(data.id));
+            // .then(response => response.json())
+            // .then(data => console.log(data.id));
         window.location.reload(false);
 
     });
@@ -59,8 +59,9 @@ export default function EditProfile({userDetail}) {
                 <div>
                     <button className="signup" type='submit' value='editProfile'>Edit</button>
                 </div>
-                </form>
-                {/* <ChangePassword userDetail={userDetail}/> */}
+            </form>
+
+
             </div>
         </div>
   )

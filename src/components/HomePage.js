@@ -13,12 +13,23 @@ export default function HomePage() {
     })
   })
   
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/posts')
+  //   .then(res => res.json())
+  //   .then(data => setAllPosts(data))
+    
+  // },[])
+
   useEffect(() => {
     fetch('http://localhost:3000/posts')
     .then(res => res.json())
-    .then(data => setAllPosts(data))
-    
+    .then(data => {
+      data.sort((a, b) => b.id - a.id);
+      setAllPosts(data);
+      // console.log("Sorted Data: ",data.sort((a, b) => b.id - a.id));
+    })
   },[])
+
   console.log(allPosts);
   const handleSubmit = (() => {
     fetch('http://localhost:3000/posts',{
@@ -28,7 +39,6 @@ export default function HomePage() {
     })
   })
   
-  console.log(allPosts);
   return (
     <>
     <div>
