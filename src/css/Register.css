@@ -92,7 +92,8 @@ input {
     padding: 10px;
     font-size: large;
     padding: 10px;
-    border-radius: 30px;    
+    border-radius: 30px;
+    cursor: pointer;
 }
 .signInButton:hover{
     color:#0077B6;

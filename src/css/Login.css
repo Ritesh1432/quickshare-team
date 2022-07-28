@@ -68,13 +68,12 @@
       width: 500px;
       margin: 10px;
   }
-  .loginButton:hover{
-    color:#0077B6;
+
+  .loginButton:hover {
+    border: 2px solid #0077B6;
+    color: #0077B6;
     background-color: white;
-    border:1px solid#0077B6;
-}
-  
-  
+  }
   
   .loginRegisterButton{
       width: 60%;
