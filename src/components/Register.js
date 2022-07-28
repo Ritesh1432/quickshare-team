@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/Register.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -10,7 +10,36 @@ export default function Register() {
     const [isPhoneNo,setIsPhoneNo] = useState(true)
     const [passCheck,setPassCheck] = useState(true)
     const [confPassCheck,setConfPassCheck] = useState(true)
+    const [registeredUsers, setRegisteredUsers] = useState([])
+    const [alreadyRegistered, setAlreadyRegistered] = useState(false)
     let navigate = useNavigate();
+
+    useEffect(() => {
+        fetch('http://localhost:3000/users')
+        .then(res => res.json())
+        .then(data => setRegisteredUsers(data))
+      }, [])
+
+    useEffect(() => {
+        if(formData.pw !== formData.cpw)
+            setConfPassCheck(false)
+        else
+            setConfPassCheck(true)
+    }, [formData.cpw])
+
+    useEffect(() => {
+        registeredUsers.map(u=>{
+            if(u.uname===formData.uname)
+            {
+                setAlreadyRegistered(true)
+                console.log(u.uname)
+            }
+        })
+        // console.log("alreadyRegistered: ",alreadyRegistered)
+        // console.log("used username: ",usedUname)
+    }, [formData.uname])
+    
+    
     
     const handleChange = ((e) => {
     setFormData({
@@ -25,6 +54,7 @@ export default function Register() {
             setRegLastName(true)
         else 
             setRegLastName(false)
+
         if(formData.pno)
         {
             if(formData.pno.length === 10)
@@ -39,13 +69,10 @@ export default function Register() {
             else
                 setPassCheck(true)
         }
-
         if(formData.pw !== formData.cpw)
             setConfPassCheck(false)
         else
             setConfPassCheck(true)
-
-        
         
         
     })
@@ -64,9 +91,9 @@ export default function Register() {
                 return true
             }
         }
-        console.log("CONF PW: ",confPassCheck);
+        // console.log("CONF PW: ",confPassCheck);
 
-        if(regFirstName && regLastName && isPhoneNo && passCheck && checkPassword())
+        if(regFirstName && regLastName && isPhoneNo && passCheck && checkPassword() && !alreadyRegistered)
         {
             
             fetch('http://localhost:3000/users',{
@@ -98,7 +125,7 @@ export default function Register() {
                             {
                                 !regFirstName &&
                                 
-                                <div className='errorMessage'>
+                                <div className='errorMessage1'>
                                 <span>First Name cannot contain number or special character</span>
                                 </div>
 
@@ -111,7 +138,7 @@ export default function Register() {
                             <input name='lname' placeholder='Last name' type='text' onChange={handleChange} required />
                             {
                              !regLastName && 
-                             <div className='errorMessage'>
+                             <div className='errorMessage1'>
                                 <span>Last Name cannot contain number or special character</span>
                             </div>
                             }
@@ -121,6 +148,13 @@ export default function Register() {
                         <div>
                             <input name='uname' placeholder='Enter Username' type='text' onChange={handleChange} required/>
                         </div>
+                        {
+                            alreadyRegistered &&
+                            <div className='errorMessage1'>
+                                <span>Username is already in use</span>
+                            </div>
+                        
+                        }
                     </div>
                     <div className="blocks">
                         <div>
@@ -131,7 +165,7 @@ export default function Register() {
                         <div>
                             <input name='pno' placeholder='Enter Phone Number' type='number' onChange={handleChange} required/>
                             { !isPhoneNo &&
-                                <div className='errorMessage'>
+                                <div className='errorMessage1'>
                                 <span>Enter valid phone number</span>
                                 </div>
                             }
@@ -142,7 +176,7 @@ export default function Register() {
                         <div>
                             <input name='pw' placeholder='Enter Password' type='password' onChange={handleChange} required/>
                             {
-                            !passCheck && <div className='errorMessage'>
+                            !passCheck && <div className='errorMessage1'>
                                 <span>Password should be contain minimum 6 characters</span>
                             </div>
                             }
@@ -152,8 +186,8 @@ export default function Register() {
                         <div>
                             <input name='cpw' placeholder='Confirm Password' type='password' onChange={handleChange} required/>
                             {
-                            confPassCheck &&
-                            <div className='errorMessage'>
+                            !confPassCheck &&
+                            <div className='errorMessage1'>
                                 <span>Confirm password should match with password</span>
                             </div>
                             }

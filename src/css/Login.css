@@ -68,7 +68,6 @@
       width: 500px;
       margin: 10px;
   }
-<<<<<<< HEAD
   .loginButton:hover{
     color:#0077B6;
     background-color: white;
@@ -76,14 +75,6 @@
 }
   
   
-=======
-
-  .loginButton:hover {
-    border: 2px solid #0077B6;
-    color: #0077B6;
-    background-color: white;
-  }
->>>>>>> ddf89097f390ee696cbb450fe582f53396a1f8b2
   
   .loginRegisterButton{
       width: 60%;
