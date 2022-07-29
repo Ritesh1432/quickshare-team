@@ -134,7 +134,7 @@ export default function Register() {
                         {
                             !regFirstName &&
                             
-                            <div className='errorMessage1'>
+                            <div className={styles.errorMessage1}>
                             <span>First Name cannot contain number or special character</span>
                             </div>
 
@@ -147,7 +147,7 @@ export default function Register() {
                             <input name='lname' placeholder='Last name' type='text' onChange={handleChange} required />
                             {
                              !regLastName && 
-                             <div className='errorMessage1'>
+                             <div className={styles.errorMessage1}>
                                 <span>Last Name cannot contain number or special character</span>
                             </div>
                             }
@@ -159,7 +159,7 @@ export default function Register() {
                         </div>
                         {
                             alreadyRegistered &&
-                            <div className='errorMessage1'>
+                            <div className={styles.errorMessage1}>
                                 <span>Username is already in use</span>
                             </div>
                         
@@ -174,7 +174,7 @@ export default function Register() {
                         <div>
                             <input name='pno' placeholder='Enter Phone Number' type='number' onChange={handleChange} required/>
                             { !isPhoneNo &&
-                                <div className='errorMessage1'>
+                                <div className={styles.errorMessage1}>
                                 <span>Enter valid phone number</span>
                                 </div>
                             }
@@ -185,7 +185,7 @@ export default function Register() {
                         <div>
                             <input name='pw' placeholder='Enter Password' type='password' onChange={handleChange} required/>
                             {
-                            !passCheck && <div className='errorMessage1'>
+                            !passCheck && <div className={styles.errorMessage1}>
                                 <span>Password should be contain minimum 6 characters</span>
                             </div>
                             }
@@ -196,7 +196,7 @@ export default function Register() {
                             <input name='cpw' placeholder='Confirm Password' type='password' onChange={handleChange} required/>
                             {
                             !confPassCheck &&
-                            <div className='errorMessage1'>
+                            <div className={styles.errorMessage1}>
                                 <span>Confirm password should match with password</span>
                             </div>
                             }
